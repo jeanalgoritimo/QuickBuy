@@ -32,6 +32,9 @@ namespace QuickBuy.Dominio.Entidades
 
             if (string.IsNullOrEmpty(Cep))
                 AdicionarMensagem("Cep não pode ser vazio!");
+
+            if (FormaPagamentoId==0)
+                AdicionarMensagem("Não foi informado a forma de pagamento!");
         }
     }
 }
