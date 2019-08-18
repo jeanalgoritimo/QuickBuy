@@ -12,7 +12,7 @@ namespace QuickBuy.Dominio.Entidades
         public string Nome { get; set; }
         public string SobreNome { get; set; }
 
-         public ICollection<Pedido> Pedido { get; set; }
+         public virtual ICollection<Pedido> Pedido { get; set; }
 
         public override void Validate()
         {
