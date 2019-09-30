@@ -48,6 +48,10 @@ namespace QuickBuy.Repositorio.Config
             builder
              .Property(p => p.DataPrevisaoEntrega)
              .IsRequired();
+
+
+            builder.HasOne(p => p.formaPagamento);
+
         }
     }
 }

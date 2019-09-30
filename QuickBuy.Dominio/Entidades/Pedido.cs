@@ -23,8 +23,8 @@ namespace QuickBuy.Dominio.Entidades
         public string NumeroEndereco { get; set; }
         public int FormaPagamentoId { get; set; }
 
-        public FormaPagamento formaPagamento { get; set; }
-        public ICollection<ItemPedido> ItemPedido { get; set; }
+        public virtual FormaPagamento formaPagamento { get; set; }
+        public virtual ICollection<ItemPedido> ItemPedido { get; set; }
 
         public override void Validate()
         {
